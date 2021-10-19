@@ -16,3 +16,5 @@ Ao executar o arquivo vendorsArrecadacao.py este printa uma tupla da empresa de 
 Ao executar o arquivo histograma.py este gera um json com os valores para cada mês de cada ano das corridas pagas em dinheiro, após executar este arquivo podemos executar o arquivo histogramaPlot.py para gerar a imagem do histograma a partir do json.
 
 Ao executar o arquivo data_serie.py este mostra na tela o gráfico de série temporal com a soma dos valores das gorgetas para cada dia dos últimos 3 meses do ano de 2012.
+
+O arquivo Análise.html se encontra na pasta input deste repositório.
