@@ -4,6 +4,8 @@ Para reproduzir as análises começamos com a instalação do PostgreSQL na máq
 Criar um banco de dados e colocar a senha.
 No arquivo database.py na linha 49 podemos configurar em qual banco de dados conectar assim como senha e usuário.
 
+Inserir as bases de dados na pasta Data do projeto. 
+
 Inicialmente executar o arquivo databaseCrete.py que vai fazer a criação da tabela.
 Após isso executar o arquivo databaseGen.py para inserir a base de dados no banco.
 
