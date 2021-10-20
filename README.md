@@ -1,6 +1,6 @@
 # Data engineer Test por Guilherme Henrique Alves Ribeiro
 
-Para reproduzir as análises começamos com a instalação do PostgreSQL na máquina, foi usado para estes testes a versão 13
+Para reproduzir as análises começamos com a instalação do PostgreSQL na máquina, foi usado para estes testes a versão 13.
 Criar um banco de dados e colocar a senha.
 No arquivo database.py na linha 49 podemos configurar em qual banco de dados conectar assim como senha e usuário.
 
