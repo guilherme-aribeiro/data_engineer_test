@@ -17,4 +17,9 @@ Ao executar o arquivo histograma.py este gera um json com os valores para cada m
 
 Ao executar o arquivo data_serie.py este mostra na tela o gráfico de série temporal com a soma dos valores das gorgetas para cada dia dos últimos 3 meses do ano de 2012.
 
-O arquivo Análise.html se encontra na pasta input deste repositório.
+
+Ao executar o arquivo corridas_fds.py ele printa o tempo médio para as corridas nos dias de sábado e domingo em minutos e segundos
+
+Ao executar o arquivo map_points plot.py ele mostra na tela um mapa de nova york com os pontos de subida e descida nos taxis.
+
+O arquivo Análise.html se encontra na pasta output deste repositório.

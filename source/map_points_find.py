@@ -5,8 +5,8 @@ import geopandas as gpd
 from shapely.geometry import Point,Polygon
 
 
-sql_pickup = "SELECT CAST(data ->> 'pickup_longitude' AS NUMERIC), CAST(data ->> 'pickup_latitude' AS NUMERIC) from dados WHERE EXTRACT(YEAR FROM(CAST (data ->> 'pickup_datetime' AS TIMESTAMP))) = 2010 and CAST(data ->> 'pickup_latitude' AS NUMERIC) >0;"
-sql_dropoff = "SELECT CAST(data ->> 'dropoff_longitude' AS NUMERIC), CAST(data ->> 'dropoff_latitude' AS NUMERIC) from dados WHERE EXTRACT(YEAR FROM(CAST (data ->> 'pickup_datetime' AS TIMESTAMP))) = 2010 and CAST(data ->> 'pickup_latitude' AS NUMERIC) >0;"
+sql_pickup = "SELECT CAST(data ->> 'pickup_longitude' AS NUMERIC), CAST(data ->> 'pickup_latitude' AS NUMERIC) from dados WHERE EXTRACT(YEAR FROM(CAST (data ->> 'pickup_datetime' AS TIMESTAMP))) = 2010 and (CAST(data ->> 'pickup_longitude' AS NUMERIC) BETWEEN -74.3 AND -73.65) AND (CAST (data ->> 'pickup_latitude' AS NUMERIC) BETWEEN 40.45 AND 40.99) ;"
+sql_dropoff = "SELECT CAST(data ->> 'dropoff_longitude' AS NUMERIC), CAST(data ->> 'dropoff_latitude' AS NUMERIC) from dados WHERE EXTRACT(YEAR FROM(CAST (data ->> 'pickup_datetime' AS TIMESTAMP))) = 2010 and (CAST(data ->> 'dropoff_longitude' AS NUMERIC) BETWEEN -74.3 AND -73.65) AND (CAST (data ->> 'dropoff_latitude' AS NUMERIC) BETWEEN 40.45 AND 40.99) ;"
 
 df_pickup=pd.DataFrame(database.consulta_sql(sql_pickup),columns=['longitude','latitude'])
 df_dropoff=pd.DataFrame(database.consulta_sql(sql_dropoff),columns=['longitude','latitude'])
